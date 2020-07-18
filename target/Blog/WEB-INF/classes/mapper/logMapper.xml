@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cdu.blog.mapper.LogDao">
+
+    <resultMap id="logMap" type="cdu.blog.pojo.Log">
+        <id property="id" column="id" />
+        <result property="operate" column="operate" />
+        <result property="operateTime" column="operateTime" />
+        <result property="userName" column="userName" />
+        <association property="user" javaType="cdu.blog.pojo.User">
+            <id property="id" column="id" />
+        </association>
+    </resultMap>
+
+    <select id="findAll" resultType="cdu.blog.pojo.Log">
+        select id id,userName userName,operate operate,operateTime operateTime from log_table
+</select>
+
+    <!--根据id查询用户-->
+    <select id="findById" parameterType="int" resultType="cdu.blog.pojo.Log">
+        select * from log_table where id=#{id}
+    </select>
+
+
+    <insert id="insert" parameterType="cdu.blog.pojo.Log" useGeneratedKeys="true" keyProperty="id" >
+        insert  into log_table(userName,operate,operateTime) values (#{userName},#{operate},#{operateTime})
+    </insert>
+
+
+    <delete id="delete" parameterType="int">
+        delete  from  log_table where id=#{id}
+    </delete>
+
+    <delete id="deleteAll">
+        delete from log_table
+    </delete>
+
+</mapper>

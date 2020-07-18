@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cdu.blog.mapper.ArticleManageMapper">
+    <resultMap type="Article" id="articleResultMap" >
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="summary" column="summary"/>
+        <result property="publishTime" column="publishTime"/>
+    </resultMap>
+
+    <delete id="deleteArticleById" parameterType="long">
+        DELETE FROM article WHERE id=#{id}
+    </delete>
+
+    <select id="queryById" resultMap="articleResultMap" parameterType="long">
+        SELECT id,title,content,summary,publishTime
+        FROM article
+        WHERE id=#{id}
+    </select>
+    <select id="queryAllArticle" resultMap="articleResultMap">
+         SELECT id,title,content,summary,publishTime
+        FROM article
+    </select>
+
+</mapper>

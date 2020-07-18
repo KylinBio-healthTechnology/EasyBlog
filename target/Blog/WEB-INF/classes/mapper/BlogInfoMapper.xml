@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cdu.blog.mapper.BlogInfoMapper">
+    <!-- 查找所有博客-->
+    <select id="listAll2" resultType="BlogInfo">
+    select * from blog_info
+  </select>
+
+    <!-- 删除博客-->
+    <delete id="deleteById2">
+    delete from blog_info where id = #{id}
+  </delete>
+
+    <!-- 根据id查找博客 -->
+    <select id="getById2" resultType="BlogInfo">
+    select * from blog_info where id = #{id}
+  </select>
+  </mapper>

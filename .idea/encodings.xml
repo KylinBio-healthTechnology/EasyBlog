@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/aop/SystemControllerLog.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/aop/SystemLogAspect.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/aop/SystemServiceLog.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/controller/ArticleManageController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/controller/LogController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/controller/UserController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/mapper/ArticleManageMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/mapper/LogDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/mapper/SysCategoryMapper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/mapper/UserMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/pojo/Log.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/service/ArticleManageService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/service/LogService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/service/UserService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/serviceimpl/ArticleManageServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/serviceimpl/LogServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/cdu/blog/serviceimpl/UserServiceImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/log4j.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/logback.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/ArticleManageMapper.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/logMapper.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/page/addUser.jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/page/updateUser.jsp" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>
